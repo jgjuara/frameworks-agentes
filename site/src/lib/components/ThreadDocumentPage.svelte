@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	import DocToc from './DocToc.svelte';
 	import EmptyTranslation from './EmptyTranslation.svelte';
 	import LangSwitch from './LangSwitch.svelte';
 	import MarkdownBody from './MarkdownBody.svelte';
@@ -44,15 +43,6 @@
 			parentDocSlug={thread.parentDocSlug}
 			{lang}
 		/>
-	</aside>
-
-	<aside class="doc-sidebar">
-		{#if document.hasContent}
-			<DocToc
-				headings={document.headings}
-				label={lang === 'es' ? 'En esta página' : 'On this page'}
-			/>
-		{/if}
 	</aside>
 
 	<main class="main-column">

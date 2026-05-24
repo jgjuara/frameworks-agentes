@@ -5,8 +5,7 @@ import {
 	extractAbstract,
 	extractTitle,
 	renderMarkdown,
-	stripFrontMatter,
-	type Heading
+	stripFrontMatter
 } from './markdown';
 import {
 	getThread,
@@ -35,7 +34,6 @@ export type LoadedDocument = {
 	title: string;
 	abstract: string | null;
 	bodyHtml: string;
-	headings: Heading[];
 	hasContent: boolean;
 };
 
@@ -65,7 +63,6 @@ export function loadDocument(
 			title: docSlug,
 			abstract: null,
 			bodyHtml: '',
-			headings: [],
 			hasContent: false
 		};
 	}
@@ -77,7 +74,6 @@ export function loadDocument(
 		title: extractTitle(md),
 		abstract: extractAbstract(md, lang),
 		bodyHtml: renderMarkdown(body, headings),
-		headings,
 		hasContent: true
 	};
 }
