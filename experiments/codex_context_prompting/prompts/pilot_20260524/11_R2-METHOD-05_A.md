@@ -1,0 +1,1 @@
+Document how a composite indicator is constructed. Done when: Components and weights are stated.; Missing component behavior is documented.

@@ -1,0 +1,37 @@
+order,task_id,task_class,condition,condition_name,prompt_path,verification
+1,R3-02,R3 sensitive simulation,C,Structured Prompt + Curated Context,experiments\codex_context_prompting\prompts\pilot_20260524\01_R3-02_C.md,Human gate review.
+2,R2-AN-05,R2 analysis,D,Structured Prompt + Full Context Dump,experiments\codex_context_prompting\prompts\pilot_20260524\02_R2-AN-05_D.md,uv run python scripts/geography_crosswalk.py --report-unmatched
+3,R3-01,R3 sensitive simulation,D,Structured Prompt + Full Context Dump,experiments\codex_context_prompting\prompts\pilot_20260524\03_R3-01_D.md,Human privacy review plus uv run pytest tests/test_synthetic_population.py
+4,R1-BUG-01,R1 bug fix,A,Sparse Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\04_R1-BUG-01_A.md,uv run pytest tests/test_csv_parser.py
+5,R1-DOC-06,R1 doc/code sync,B,Structured Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\05_R1-DOC-06_B.md,Manual grep for old paths plus doc review.
+6,R2-AN-01,R2 analysis,F,Plan-First,experiments\codex_context_prompting\prompts\pilot_20260524\06_R2-AN-01_F.md,uv run python scripts/build_coverage.py --month 2026-04
+7,R0-02,R0 explanation,C,Structured Prompt + Curated Context,experiments\codex_context_prompting\prompts\pilot_20260524\07_R0-02_C.md,Manual review against the log excerpt.
+8,R2-AN-02,R2 analysis,A,Sparse Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\08_R2-AN-02_A.md,uv run python scripts/robustness_trimmed_mean.py
+9,R0-01,R0 explanation,F,Plan-First,experiments\codex_context_prompting\prompts\pilot_20260524\09_R0-01_F.md,Manual review: every behavioral claim has a file reference.
+10,R3-06,R3 sensitive simulation,F,Plan-First,experiments\codex_context_prompting\prompts\pilot_20260524\10_R3-06_F.md,Human governance review.
+11,R2-METHOD-05,R2 methods note,A,Sparse Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\11_R2-METHOD-05_A.md,Human rubric review.
+12,R1-DOC-03,R1 doc/code sync,C,Structured Prompt + Curated Context,experiments\codex_context_prompting\prompts\pilot_20260524\12_R1-DOC-03_C.md,Manual doc review plus uv sync smoke check.
+13,R1-DOC-05,R1 doc/code sync,E,AGENTS.md + Short Task Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\13_R1-DOC-05_E.md,Manual review against public API diff.
+14,R2-METHOD-04,R2 methods note,F,Plan-First,experiments\codex_context_prompting\prompts\pilot_20260524\14_R2-METHOD-04_F.md,Human rubric review.
+15,R1-BUG-02,R1 bug fix,F,Plan-First,experiments\codex_context_prompting\prompts\pilot_20260524\15_R1-BUG-02_F.md,uv run pytest tests/test_reporting_dates.py
+16,R0-05,R0 explanation,A,Sparse Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\16_R0-05_A.md,Manual review against tests.
+17,R2-METHOD-03,R2 methods note,E,AGENTS.md + Short Task Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\17_R2-METHOD-03_E.md,Human rubric review.
+18,R1-BUG-05,R1 bug fix,D,Structured Prompt + Full Context Dump,experiments\codex_context_prompting\prompts\pilot_20260524\18_R1-BUG-05_D.md,uv run pytest tests/test_export_table.py
+19,R2-METHOD-02,R2 methods note,D,Structured Prompt + Full Context Dump,experiments\codex_context_prompting\prompts\pilot_20260524\19_R2-METHOD-02_D.md,Human rubric review.
+20,R0-06,R0 explanation,B,Structured Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\20_R0-06_B.md,Manual review against notebook and script.
+21,R1-BUG-04,R1 bug fix,B,Structured Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\21_R1-BUG-04_B.md,uv run pytest tests/test_retry.py
+22,R3-05,R3 sensitive simulation,E,AGENTS.md + Short Task Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\22_R3-05_E.md,Human privacy review.
+23,R0-03,R0 explanation,E,AGENTS.md + Short Task Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\23_R0-03_E.md,Manual review against implementation.
+24,R3-03,R3 sensitive simulation,A,Sparse Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\24_R3-03_A.md,uv run pytest tests/test_disclosure.py plus human privacy review.
+25,R1-BUG-06,R1 bug fix,C,Structured Prompt + Curated Context,experiments\codex_context_prompting\prompts\pilot_20260524\25_R1-BUG-06_C.md,uv run pytest tests/test_ingest_files.py
+26,R2-AN-04,R2 analysis,B,Structured Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\26_R2-AN-04_B.md,uv run python scripts/deduplicate_beneficiaries.py --dry-run false
+27,R1-BUG-03,R1 bug fix,E,AGENTS.md + Short Task Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\27_R1-BUG-03_E.md,uv run pytest tests/test_grouping.py
+28,R2-AN-03,R2 analysis,E,AGENTS.md + Short Task Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\28_R2-AN-03_E.md,uv run python scripts/run_regression.py --seed 20260524
+29,R1-DOC-01,R1 doc/code sync,F,Plan-First,experiments\codex_context_prompting\prompts\pilot_20260524\29_R1-DOC-01_F.md,uv run pytest tests/test_cli_docs.py
+30,R1-DOC-04,R1 doc/code sync,A,Sparse Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\30_R1-DOC-04_A.md,uv run pytest tests/test_metric_docs.py
+31,R0-04,R0 explanation,D,Structured Prompt + Full Context Dump,experiments\codex_context_prompting\prompts\pilot_20260524\31_R0-04_D.md,Manual review with lineage doc.
+32,R1-DOC-02,R1 doc/code sync,D,Structured Prompt + Full Context Dump,experiments\codex_context_prompting\prompts\pilot_20260524\32_R1-DOC-02_D.md,uv run pytest tests/test_api_schema_docs.py
+33,R2-METHOD-06,R2 methods note,B,Structured Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\33_R2-METHOD-06_B.md,Human rubric review.
+34,R2-AN-06,R2 analysis,C,Structured Prompt + Curated Context,experiments\codex_context_prompting\prompts\pilot_20260524\34_R2-AN-06_C.md,uv run python scripts/figure_data.py --figure coverage_trend
+35,R2-METHOD-01,R2 methods note,C,Structured Prompt + Curated Context,experiments\codex_context_prompting\prompts\pilot_20260524\35_R2-METHOD-01_C.md,Human rubric review.
+36,R3-04,R3 sensitive simulation,B,Structured Prompt,experiments\codex_context_prompting\prompts\pilot_20260524\36_R3-04_B.md,Human governance review.

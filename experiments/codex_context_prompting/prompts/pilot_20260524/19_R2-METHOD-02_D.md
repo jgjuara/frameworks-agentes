@@ -1,0 +1,42 @@
+# Codex Task
+
+## Mission
+Document the imputation approach used for missing survey values.
+
+## Context
+- `src/imputation/simple.py`: relevant to the task.
+- `tests/test_imputation.py`: relevant to the task.
+
+## Known Signal
+Only single imputation is implemented.
+
+## Full Background Dump
+This task is part of an internal experiment on prompt structure, context volume, AGENTS.md instructions, verification-rich prompts, and plan-first execution. The protocol compares sparse prompts, structured prompts, curated context, full context dumps, durable instructions, and plan-first workflows. The broader research question is how much up-front context Codex needs for verifiable computational work. This background is intentionally more verbose than needed for the task and may include details that do not change the plan.
+
+## Constraints
+- Keep changes scoped to the task.
+- Preserve raw data and do not expose sensitive records.
+- Use existing repository patterns.
+
+## Allowed Actions
+- Read relevant repository files.
+- Edit only files needed for the task.
+- Run the validation command or rubric.
+
+## Forbidden Without Approval
+- Delete files or reset repository state.
+- Install dependencies, publish outputs, or call external services.
+- Use protected or unidentified raw data.
+
+## Done When
+- [ ] Note states when imputation applies.
+- [ ] Limitations are explicit.
+- [ ] Verification passes: `Human rubric review.`
+
+## Escalate If
+- Requirements conflict or acceptance criteria are not verifiable.
+- The task requires a forbidden action.
+- Data provenance or privacy status is unclear.
+
+## Final Response
+Report changed files, validation commands/results, assumptions, limitations, and residual risks.

@@ -1,0 +1,37 @@
+task_id,task_class,risk_class,condition,condition_name,prompt_words,context_items,readiness_score,readiness_minimum,readiness_pass
+R3-02,R3 sensitive simulation,R3,C,Structured Prompt + Curated Context,181,2,14,12,True
+R2-AN-05,R2 analysis,R2,D,Structured Prompt + Full Context Dump,256,2,14,10,True
+R3-01,R3 sensitive simulation,R3,D,Structured Prompt + Full Context Dump,265,2,14,12,True
+R1-BUG-01,R1 bug fix,R1,A,Sparse Prompt,20,0,2,8,False
+R1-DOC-06,R1 doc/code sync,R1,B,Structured Prompt,168,1,14,8,True
+R2-AN-01,R2 analysis,R2,F,Plan-First,219,3,14,10,True
+R0-02,R0 explanation,R0,C,Structured Prompt + Curated Context,193,2,14,6,True
+R2-AN-02,R2 analysis,R2,A,Sparse Prompt,22,0,2,10,False
+R0-01,R0 explanation,R0,F,Plan-First,213,2,14,6,True
+R3-06,R3 sensitive simulation,R3,F,Plan-First,211,2,14,12,True
+R2-METHOD-05,R2 methods note,R2,A,Sparse Prompt,19,0,2,10,False
+R1-DOC-03,R1 doc/code sync,R1,C,Structured Prompt + Curated Context,180,2,14,8,True
+R1-DOC-05,R1 doc/code sync,R1,E,AGENTS.md + Short Task Prompt,47,2,14,8,True
+R2-METHOD-04,R2 methods note,R2,F,Plan-First,202,2,14,10,True
+R1-BUG-02,R1 bug fix,R1,F,Plan-First,207,2,14,8,True
+R0-05,R0 explanation,R0,A,Sparse Prompt,24,0,4,6,False
+R2-METHOD-03,R2 methods note,R2,E,AGENTS.md + Short Task Prompt,47,2,12,10,True
+R1-BUG-05,R1 bug fix,R1,D,Structured Prompt + Full Context Dump,264,2,14,8,True
+R2-METHOD-02,R2 methods note,R2,D,Structured Prompt + Full Context Dump,252,2,14,10,True
+R0-06,R0 explanation,R0,B,Structured Prompt,171,1,14,6,True
+R1-BUG-04,R1 bug fix,R1,B,Structured Prompt,165,2,14,8,True
+R3-05,R3 sensitive simulation,R3,E,AGENTS.md + Short Task Prompt,45,2,14,12,True
+R0-03,R0 explanation,R0,E,AGENTS.md + Short Task Prompt,46,2,14,6,True
+R3-03,R3 sensitive simulation,R3,A,Sparse Prompt,21,0,2,12,False
+R1-BUG-06,R1 bug fix,R1,C,Structured Prompt + Curated Context,179,2,14,8,True
+R2-AN-04,R2 analysis,R2,B,Structured Prompt,166,1,14,10,True
+R1-BUG-03,R1 bug fix,R1,E,AGENTS.md + Short Task Prompt,46,2,12,8,True
+R2-AN-03,R2 analysis,R2,E,AGENTS.md + Short Task Prompt,47,2,12,10,True
+R1-DOC-01,R1 doc/code sync,R1,F,Plan-First,205,2,14,8,True
+R1-DOC-04,R1 doc/code sync,R1,A,Sparse Prompt,19,0,2,8,False
+R0-04,R0 explanation,R0,D,Structured Prompt + Full Context Dump,267,2,14,6,True
+R1-DOC-02,R1 doc/code sync,R1,D,Structured Prompt + Full Context Dump,257,2,14,8,True
+R2-METHOD-06,R2 methods note,R2,B,Structured Prompt,160,1,14,10,True
+R2-AN-06,R2 analysis,R2,C,Structured Prompt + Curated Context,181,2,14,10,True
+R2-METHOD-01,R2 methods note,R2,C,Structured Prompt + Curated Context,185,2,14,10,True
+R3-04,R3 sensitive simulation,R3,B,Structured Prompt,165,1,14,12,True
